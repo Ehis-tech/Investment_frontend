@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0afba3624a.js" crossorigin="anonymous"></script>
+    <title>Investment website</title>
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+
+@media screen and (max-width:540px) {
+
+.header {
+    display: none;
+}
+
+.nav-2 {
+    display: none;
+}
+
+.headerX {
+    position: relative;
+    width:500px;
+    display: flex;
+    column-gap: 180px;
+    margin-left: -40px;
+    background: #E0E0E0;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.hamburger,
+    .toogle-menu {
+        display: block;
+    }
+
+    .header-content2 {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #404040;
+        width: 300px;
+        height: 700px; 
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+    
+  
+
+    .menu li a {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+
+.header-text2 {
+    line-height: 0.9rem;
+}
+
+
+#showcase {
+    margin-top: 0.5px;
+}
+
+#company-box {
+    display: grid;
+}
+
+#company-box .container {
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.mission-content h3 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+     margin-left:80px ;
+    margin-right:80px ;
+}
+
+.column-row {
+    display: grid;
+    margin-bottom: 0.5px;
+    background-color: #E0E0E0;  
+    padding: 55px;
+}
+
+.column1 {
+    width: 300px;
+    height: 350px;
+    
+    
+}
+
+.column2 {
+    width: 300px;
+    height: 350px;
+    margin-top: 25px;
+   
+
+}
+
+.column3 {
+    width: 300px;
+    height: 350px;
+    margin-top: 25px;
+   
+
+}
+
+.column4 {
+    width: 300px;
+    height: 350px;
+    margin-top: 25px;
+}
+
+.column-row  .btn-column {
+    margin-top: 60px;
+}
+
+.info-box {
+    height: 400px;
+}
+
+.info-box .info-container2 {
+        display: grid;
+    }
+
+    .info-box .info-container {
+        display: none;
+    }
+
+    #ceo-container {
+        display: grid;
+    }
+   .ceo-row {
+        display: grid;
+        padding: 55px;
+        justify-content: center;
+        margin-top:-30px
+    }
+
+    .ceo1 {
+        margin-top: 25px;
+    }
+    .ceo2 {
+        margin-top: 25px;
+    }
+
+    .ceo3 {
+    margin-top: 25px;
+    }    
+
+    .number-box {
+        display: grid;
+       height: 350px;
+       margin-top: 990px;
+    }  
+
+    .number-container {
+    display: grid;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.number-row {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 0.2rem;
+  
+}
+
+.number-box .number-container  h5 {
+    background: #ffff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    padding: 15px; 
+}
+
+.number-box .number-container  p {
+    background: #ffff;
+    color: #E0E0E0;
+    font-size: 13px;
+    font-weight: 200;
+    font-family:'Poppins', sans-serif;                                  
+    padding: 5px;
+}
+
+#variety {
+    background-color: #ffff;
+    display: grid;
+    height: 750px;
+    margin-top: 250px;
+}
+
+.img-variety {
+    height:350px;
+    width: 368px;
+    margin: 10% 5%;
+    padding: 5px;
+    align-self: center;
+    box-shadow: #404040;  
+}
+
+.img-variety:hover {
+    transform: scale(1.2);
+}
+
+.variety-container {
+    background: #404040;
+    width: 100%;
+}
+
+section {
+        align-self: center;
+        height: fit-content;
+    }
+
+.variety-box .variety-header1 {
+   display: none;
+}
+
+.variety-box .variety-header2 {
+  display: none;
+    
+}
+
+.variety-box .variety-header11 {
+    display: block;
+    color: #E0E0E0;
+    font-size: 35px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.variety-box .variety-header22 {
+    display: block;
+    color: #E0E0E0;
+    font-size: 35px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;   
+}
+
+.variety-grid .grid {
+    display: grid;
+    grid-gap: 2rem;
+    margin-top: 10px;
+    align-items: center; 
+}
+
+.variety-grid .icon i {
+    color: #E0E0E0;
+    padding: 0.1rem;
+
+}
+
+.variety-grid .note-grid {
+    display: block;
+    padding: 3px 0px; 
+} 
+
+.variety-grid .note-grid h2 {
+    line-height: 1.2em;
+}
+
+.variety-grid .note-grid p {
+    line-height: 1.2em;
+    
+}
+
+#testimonial {
+        margin-top: 500px;
+    }
+
+    .testimonial-content h3 {
+    margin-top: 95px;
+    margin-left:60px; 
+    margin-right:60px; 
+}
+
+.testimonial-content .container .slide-container .slide {
+    width: 270px;
+    height: 400px;
+    padding: 10px;
+}
+
+.testimonial-content .container .slide-container .slide .icon {
+   display: none;
+}
+
+.testimonial-content .container .slide-container .slide .user .user-info h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: -10px;
+} 
+
+
+.image .image-placing {
+    display: none;
+}
+
+.image2 .image-placing2 {
+    display: block;
+    width: 100%;
+    height: 300px;
+    justify-self: center;
+}
+
+#section-experience {
+   margin-top: 250px;
+}
+
+.dark-box {
+    margin: 0 7%;
+    position: relative; 
+    margin-top: 190px;
+    height: 400px;
+    width: 350px;
+}
+
+.dark-box .note-pad {
+    display: block;  
+}
+
+.note-pad p {
+    margin:0 5%;
+}
+
+
+.experience-container {
+    margin: 0 5%;
+}
+.experience-container h5 {
+    margin: 0 15%;
+}
+
+.footer-box { 
+    display: grid;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0.2px;
+    justify-self: center;
+   
+    
+}
+
+.footer-boxheader {
+    display: block;
+    padding: 10px ;
+    text-align: center;
+}
+
+.footer-boxheader h6 {
+    font-size: 30px;
+}
+
+.footer-boxheader p {
+    font-size: 20px;
+   
+}
+
+.footer-box .footer-boxlinks {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.footer-boxlinks  .btn-request {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer-container {
+    display: grid;
+    height: 1190px;    
+}
+
+#first-div header {
+    display: grid;
+    justify-self: center;
+}
+
+#first-div {
+    margin-top: 50px ;
+}
+
+#first-div .social-links {
+    justify-self: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+.social-links a {
+    padding: 5px 10px;
+}
+
+
+#second-div .row {
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: center;
+   
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+}
+.row .footer-col h2 {
+    font-size: 30px;
+}
+
+.horizontal-linebox {
+    margin-top: 0.1px;
+}
+
+.horizontal-line {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.all-rights p {
+    padding: 40px;
+    font-size: 13px;
+}
+
+}
+
+@media screen and (width = 768px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -90px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    } 
+    
+
+
+    #showcase {
+        margin-top: -85px;
+    }
+
+
+    #company-box .container {
+    color: #E0E0E0;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.mission-content h3 {
+     margin-left:280px ;
+    margin-right:280px ; 
+} 
+
+.column-row .column-header1 {
+    font-size: 30px;
+    padding: 10px 7px;
+   
+}
+
+.column-row .column1 p {
+    font-size: 12px;
+    padding: 10px 7px;
+   text-align: center;
+}
+
+.column-row .column2 p {
+    font-size: 13px;
+}
+.column-row .column3 p {
+    font-size: 13px;
+}
+.column-row .column4 p {
+    font-size: 13px;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+}
+
+.number-box {
+        display: grid;
+       height: 250px;
+       margin-top: 5px;
+       
+    }  
+
+    .number-container {
+    display: grid;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.number-row {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5rem;
+  
+}
+
+.number-box .number-container  h5 {
+    font-size: 70px;
+    font-weight: 400;
+    padding: 15px; 
+}
+
+.number-box .number-container  p {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 5px;
+}  
+    
+
+ #variety {
+    margin-top: 450px;
+} 
+
+
+
+.img-variety {
+    width: 300px;
+    height: 400px;
+    margin-top:-100px;
+    margin-right: -320px;
+    margin-left: 5px;
+    position: relative;
+
+}
+
+.variety-container {
+    background: #404040;
+    width: 100%;
+    padding: 10px;
+}
+
+.variety-grid .note-grid h2 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family:'Poppins', sans-serif;
+    line-height: 0.9em;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+.dark-box {
+    height: 400px;
+    width: 350px;
+}
+
+.dark-box .note-pad {
+    display: block;  
+}
+
+.note-pad p {
+    margin:0 5%;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 820px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+
+.nav-list {
+        margin-top: 10px;
+    } 
+
+
+    #showcase {
+        margin-top: -85px;
+    }
+
+
+    #company-box .container {
+    color: #E0E0E0;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.mission-content h3 {
+     margin-left:280px ;
+    margin-right:280px ; 
+} 
+
+.column-row .column-header1 {
+    font-size: 30px;
+    padding: 10px 7px;
+   
+}
+
+.column-row .column1 p {
+    font-size: 12px;
+    padding: 10px 7px;
+   text-align: center;
+}
+
+.column-row .column2 p {
+    font-size: 13px;
+}
+.column-row .column3 p {
+    font-size: 13px;
+}
+.column-row .column4 p {
+    font-size: 13px;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+}
+
+.number-box {
+        display: grid;
+       height: 250px;
+       margin-top: 5px;
+       
+    }  
+
+    .number-container {
+    display: grid;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.number-row {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5rem;
+  
+}
+
+.number-box .number-container  h5 {
+    font-size: 70px;
+    font-weight: 400;
+    padding: 15px; 
+}
+
+.number-box .number-container  p {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 5px;
+}  
+    
+
+ #variety {
+    margin-top: 450px;
+} 
+
+
+
+.img-variety {
+    width: 300px;
+    height: 400px;
+    margin-top:-100px;
+    margin-right: -320px;
+    margin-left: 5px;
+    position: relative;
+
+}
+
+.variety-container {
+    background: #404040;
+    width: 100%;
+    padding: 10px;
+}
+
+.variety-grid .note-grid h2 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family:'Poppins', sans-serif;
+    line-height: 0.9em;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+.dark-box {
+    height: 400px;
+    width: 350px;
+}
+
+.dark-box .note-pad {
+    display: block;  
+}
+
+.note-pad p {
+    margin:0 5%;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 912px) {
+  .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -90px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    } 
+
+
+#showcase {
+    margin-top: -85px;
+}
+
+.nav-list {
+    margin-top: 18px;
+}
+
+#company-box .container {
+color: #E0E0E0;
+padding: 10px;
+margin-left: 10px;
+text-align: center;
+}
+
+.mission-content h3 {
+ margin-left:280px ;
+margin-right:280px ; 
+} 
+
+.column-row .column-header1 {
+font-size: 30px;
+padding: 10px 7px;
+
+}
+
+.column-row .column1 p {
+font-size: 12px;
+padding: 10px 7px;
+text-align: center;
+}
+
+.column-row .column2 p {
+font-size: 13px;
+}
+.column-row .column3 p {
+font-size: 13px;
+}
+.column-row .column4 p {
+font-size: 13px;
+}
+
+.ceo1 {
+width: 255px;
+height: 550px;
+}
+.ceo2 {
+width: 255px;
+height: 550px;
+}
+.ceo3 {
+width: 255px;
+height: 550px;
+}
+
+.ceo-row h5 {
+font-size: 25px;
+}
+
+#ceo-container {
+display: flex;
+height: 400px;
+justify-content: center;
+}
+
+.number-box {
+    display: grid;
+   height: 250px;
+   margin-top: 5px;
+   
+}  
+
+.number-container {
+display: grid;
+justify-content: center; 
+align-items: center;  
+}
+
+.number-row {
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+grid-gap: 5rem;
+
+}
+
+.number-box .number-container  h5 {
+font-size: 70px;
+font-weight: 400;
+padding: 15px; 
+}
+
+.number-box .number-container  p {
+font-size: 15px;
+font-weight: 200;
+padding: 5px;
+}  
+
+
+#variety {
+margin-top: 450px;
+} 
+
+
+
+.img-variety {
+width: 300px;
+height: 400px;
+margin-top:-100px;
+margin-right: -320px;
+margin-left: 5px;
+position: relative;
+
+}
+
+.variety-container {
+background: #404040;
+width: 100%;
+padding: 10px;
+}
+
+.variety-grid .note-grid h2 {
+font-size: 25px;
+font-weight: 200;
+font-family:'Poppins', sans-serif;
+line-height: 0.9em;
+}
+
+#testimonial {
+margin-top: 40px;
+}
+
+.testimonial-content h4 {
+margin-left:280px ; 
+margin-right:280px ;  
+} 
+
+.dark-box {
+height: 400px;
+width: 350px;
+}
+
+.dark-box .note-pad {
+display: block;  
+}
+
+.note-pad p {
+margin:0 5%;
+}
+
+.footer-box {
+column-gap: 0.1px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 95px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 853px) {
+  .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -90px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    } 
+
+
+#showcase {
+    margin-top: -85px;
+}
+
+
+#company-box .container {
+color: #E0E0E0;
+padding: 10px;
+margin-left: 10px;
+text-align: center;
+}
+
+.mission-content h3 {
+ margin-left:280px ;
+margin-right:280px ; 
+} 
+
+.column-row .column-header1 {
+font-size: 30px;
+padding: 10px 7px;
+
+}
+
+.column-row .column1 p {
+font-size: 12px;
+padding: 10px 7px;
+text-align: center;
+}
+
+.column-row .column2 p {
+font-size: 13px;
+}
+.column-row .column3 p {
+font-size: 13px;
+}
+.column-row .column4 p {
+font-size: 13px;
+}
+
+.ceo1 {
+width: 255px;
+height: 550px;
+}
+.ceo2 {
+width: 255px;
+height: 550px;
+}
+.ceo3 {
+width: 255px;
+height: 550px;
+}
+
+.ceo-row h5 {
+font-size: 25px;
+}
+
+#ceo-container {
+display: flex;
+height: 400px;
+justify-content: center;
+}
+
+.number-box {
+    display: grid;
+   height: 250px;
+   margin-top: 5px;
+   
+}  
+
+.number-container {
+display: grid;
+justify-content: center; 
+align-items: center;  
+}
+
+.number-row {
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+grid-gap: 5rem;
+
+}
+
+.number-box .number-container  h5 {
+font-size: 70px;
+font-weight: 400;
+padding: 15px; 
+}
+
+.number-box .number-container  p {
+font-size: 15px;
+font-weight: 200;
+padding: 5px;
+}  
+
+
+#variety {
+margin-top: 450px;
+} 
+
+
+
+.img-variety {
+width: 300px;
+height: 400px;
+margin-top:-100px;
+margin-right: -320px;
+margin-left: 5px;
+position: relative;
+
+}
+
+.variety-container {
+background: #404040;
+width: 100%;
+padding: 10px;
+}
+
+.variety-grid .note-grid h2 {
+font-size: 25px;
+font-weight: 200;
+font-family:'Poppins', sans-serif;
+line-height: 0.9em;
+}
+
+#testimonial {
+margin-top: 40px;
+}
+
+.testimonial-content h4 {
+margin-left:280px ; 
+margin-right:280px ;  
+} 
+
+.dark-box {
+height: 400px;
+width: 350px;
+}
+
+.dark-box .note-pad {
+display: block;  
+}
+
+.note-pad p {
+margin:0 5%;
+}
+
+.footer-box {
+column-gap: 60px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 65px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 1024px) {
+
+    .nav-content {
+    column-gap: 200px;
+}
+
+#showcase {
+    margin-top: -85px;
+}
+
+.nav-list {
+    margin-top: 18px;
+}
+
+#company-box .container {
+color: #E0E0E0;
+padding: 10px;
+margin-left: 10px;
+text-align: center;
+}
+
+.mission-content h3 {
+ margin-left:280px ;
+margin-right:280px ; 
+} 
+
+.column-row .column-header1 {
+font-size: 30px;
+padding: 10px 7px;
+
+}
+
+.column-row .column1 p {
+font-size: 12px;
+padding: 10px 7px;
+text-align: center;
+}
+
+.column-row .column2 p {
+font-size: 13px;
+}
+.column-row .column3 p {
+font-size: 13px;
+}
+.column-row .column4 p {
+font-size: 13px;
+}
+
+.ceo1 {
+width: 255px;
+height: 550px;
+}
+.ceo2 {
+width: 255px;
+height: 550px;
+}
+.ceo3 {
+width: 255px;
+height: 550px;
+}
+
+.ceo-row h5 {
+font-size: 25px;
+}
+
+#ceo-container {
+display: flex;
+height: 400px;
+justify-content: center;
+}
+
+.number-box {
+    display: grid;
+   height: 250px;
+   margin-top: 5px;
+   
+}  
+
+.number-container {
+display: grid;
+justify-content: center; 
+align-items: center;  
+}
+
+.number-row {
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+grid-gap: 5rem;
+
+}
+
+.number-box .number-container  h5 {
+font-size: 70px;
+font-weight: 400;
+padding: 15px; 
+}
+
+.number-box .number-container  p {
+font-size: 15px;
+font-weight: 200;
+padding: 5px;
+}  
+
+
+#variety {
+margin-top: 450px;
+} 
+
+
+
+.img-variety {
+width: 300px;
+height: 400px;
+margin-top:-100px;
+margin-right: -320px;
+margin-left: 5px;
+position: relative;
+
+}
+
+.variety-container {
+background: #404040;
+width: 100%;
+padding: 10px;
+}
+
+.variety-grid .note-grid h2 {
+font-size: 25px;
+font-weight: 200;
+font-family:'Poppins', sans-serif;
+line-height: 0.9em;
+}
+
+#testimonial {
+margin-top: 40px;
+}
+
+.testimonial-content h4 {
+margin-left:280px ; 
+margin-right:280px ;  
+} 
+
+.dark-box {
+height: 400px;
+width: 350px;
+}
+
+.dark-box .note-pad {
+display: block;  
+}
+
+.note-pad p {
+margin:0 5%;
+}
+
+.footer-box {
+column-gap: 180px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 900px;
+margin-left: 55px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+
+
+
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="header-content">
+           <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+           <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+            <p class="header-text2">investment solutions</p> </div> 
+        </div>
+    </header>
+
+    <header class="headerX">
+       
+           
+        <div class="header-content2"> 
+           <div><a href="#" class="logo2"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+           <div><p class="header-text2">EHIS<span class="text-primary2">INVEST</span></p>
+            <p class="header-text3">investment solutions</p> </div> 
+        </div>
+
+   
+    <div class="navigation">
+
+       <input type="checkbox" class="toggle-menu">
+      <div class="ham-container"> 
+           <div class="hamburger"></div>
+      </div>
+
+     
+         
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> 
+    </div>
+</header>
+
+
+    <nav class="nav-2">
+        <div class="nav-content">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-box">
+                <p><i class="fa-solid fa-phone"></i> Free Consultation</p>
+            </div>
+        </div>  
+    </nav> 
+
+    <div id="showcase">
+                <div class="showcase-content">
+                    <h1>We will take you through</h1>
+                      <h2> Each step till the end.</h2>
+                <p>Investors particularly novices, are often advised to adopt a particular</p>
+                <p>investment strategy and diversly their portfolio</p>
+                <p>Diversification has the statistical effect of reducing overall risk.</p>
+
+                <a href="#" class="btn">Our solutions</a>
+                </div>
+        </div> 
+
+        <div id="company-box">
+            <div class="container">
+                <p class="box-note"> Trusted by famous companies</p>
+            </div>
+        </div>
+
+        <section id="mission">
+            <div class="mission-content">
+                <h3> OUR MISSION</h3>
+                <p class="mission-note">It's Personal, Every Person Who Walks Through Our Door is important To Us,</p>
+                <p class="mission-note">Experience and Knowledge When You Need it Most.</p>
+                <p class="mission-end"> To create a better everyday life for the many people</p>
+
+            </div>
+        </section>
+
+        <div class="column-row">
+            <div class="column1">
+                <h2 class="column-header1"> Our </h2>
+                <h2 class="column-header1"> Solutions </h2>
+                <h2 class="column-header1"> Are best </h2>
+                <P>We will help you to invest in</P>
+                <p>everything</p>
+
+            </div>
+
+            <div class="column2">
+                <i class="fa-solid fa-money-bill-trend-up fa-2x"></i>
+                <h2 class="column-header2">Investment</h2>
+                <h2 class="column-header2">Advices</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+
+            <div class="column3">
+                <i class="fa-solid fa-sack-dollar fa-2x"></i>
+                <h2 class="column-header3">Investment</h2>
+                <h2 class="column-header3">Insurance</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+
+            <div class="column4">
+                <i class="fa-solid fa-handshake fa-2x"></i>
+                <h2 class="column-header4">Wealth</h2>
+                <h2 class="column-header4">Management</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+        </div>
+
+        <section class="info-box">
+            <div class="info-container">
+                <div class="info-headerbox">
+                    <h4 class="info-header"> Who We</h4>
+                    <h4 class="info-header"> Are?</h4>
+                </div>
+               
+
+                <div class="info-text">
+                    <p>investors generally expect higher returns from riskier investments. When a low risk investment is</p>
+                    <p>made, the return is also generally low. Similary high risk comes with high returns.</p>
+    
+                    <a href="#" class="btn-info"><i class="fa-solid fa-arrow-right"></i>See more</a>
+                </div>
+            </div>
+
+           <div class="info-container2">
+                <div class="info-headerbox2">
+                    <h4 class="info-header2"> Who We Are?</h4>
+                </div>
+               
+
+                <div class="info-text2">
+                    <p>investors generally expect higher </p>
+                    <p>returns from riskier investments. When </p> 
+                    <p>a low risk investment is made, the </p>
+                    <p>return is also generally low. Similary
+                    <p> high risk comes with high returns.</p>
+    
+                    <a href="#" class="btn-info"><i class="fa-solid fa-arrow-right"></i>See more</a>
+                </div>
+            </div>   
+        </section>
+       
+            <section id="ceo-container">
+                      
+       <div class="ceo-row">
+            <div class="ceo1">
+                <h5>Brad Traversy</h5>
+                <P>co-founder</P>
+            </div>
+
+            <div class="ceo2">
+                <h5>Sarah Williams</h5>
+                <P>Manager & Analyzer</P> 
+            </div>
+
+            <div class="ceo3">
+                <h5>John Mcgrath</h5>
+                <P>Risk Manager</P> 
+            </div> 
+        </div> 
+
+          </section>   
+
+
+   
+
+        <div class="number-box">
+            <div class="number-container">
+                <div class="number-row">
+                    <div class="number1">
+                        <h5>37+</h5>
+                        <P>Years of experience</P>
+                    </div>
+        
+                    <div class="number2">
+                        <h5>98k</h5>
+                        <P>Success Investment</P> 
+                    </div>
+        
+                    <div class="number3">
+                        <h5>65B</h5>
+                        <P>Dollar money profit</P> 
+                    </div> 
+        
+                    <div class="number4">
+                        <h5>24+</h5>
+                        <P>Expert advisors</P> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <section id="variety">
+
+            <img class="img-variety" src="./img/pexels-yankrukov-7793932.jpg" alt="">
+
+            <div class="variety-container">
+                <div class="variety-box">
+                    <h2 class="variety-header1">What we can do more in </h2>
+                    <h2 class="variety-header2">different cases</h2>
+                   <h3 class="variety-header11">What we can do more </h3>
+                    <h3 class="variety-header22"> in different cases</h3> 
+                    <p class="variety-subheader"> Our advisors vision</p>
+
+       <div class="variety-grid">
+
+          <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>College savings</h2>
+                <P>insurable risk is predictable</P>
+            </div>      
+         </div>
+
+       <div class="grid">
+        <div class="icon">
+            <i class="fa-solid fa-vault fa-2x"></i>
+        </div>
+          
+        <div class="note-grid">
+            <h2>Wealth Management</h2>
+            <P>Better proper functioning</P>
+        </div>               
+         </div>
+
+         <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-money-bill-trend-up fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>Stocks Management</h2>
+                <P>Obtain highest profit</P>
+            </div>              
+         </div>
+
+     <div class="grid">
+        <div class="icon">
+            <i class="fa-solid fa-arrow-trend-up fa-2x"></i>
+        </div>
+          
+        <div class="note-grid">
+            <h2>Income insurance</h2>
+            <P>Buying and selling tools</P>
+        </div>
+                            
+        </div>
+
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-coins fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>Investment Avice</h2>
+                <P>Aim all economic activities</P>
+            </div>                   
+            </div>
+                                   
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-file-contract fa-2x"></i>
+                </div>
+                  
+                <div class="note-grid">
+                    <h2>Industrial contracts</h2>
+                    <P>New and inventive way</P>
+                </div>                   
+                </div>                                 
+                    
+      </div> 
+     </div>  
+ </div>  
+ </section>
+
+ <section id="testimonial">
+    <div class="testimonial-content">
+        <h4>TESTIMONIALS</h4>
+        <p class="testimonial-note1">What Our Customers Say?</p>
+        <p class="testimonial-note2">We have over 15,000 happy customers all over the world</p>
+
+        <div class="container">
+
+            <div class="slide-container active">
+                <div class="slide">
+                    <i class="fa-solid fa-quote-right icon"></i>
+                    <div class="user">
+                        <img  src="./img/pexels-linkedin-2182970.jpg" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text">  " Would you like me to give you a formula for sucess? its's quite simple, really: Double your rate of
+                        failure. You are thinking of failure as the enemey of success. But it isn't at all. You can be
+                        discouraged by failure or you can learn from it, so go aheadand make mistakes. Make all you 
+                        can. Because remember that's where you will find success "  </p>
+                </div>
+            </div>
+        
+            <div class="slide-container">
+                <div class="slide">
+                    <i class="fa-solid fa-quote-right icon"></i>
+                    <div class="user">
+                        <img  src="./img/pexels-cottonbro-5491144.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Amanda Johanson</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text">  " Investors generally expect higher returns from riskier investmensts. When a low risk
+                        investment is made, the return is also generally low. Similary, high risk comes with high returns.
+                        investors,are particularly novices, are often advised to adopt a particular investment strategy and
+                        diversify their portfolio"  </p>
+                </div>
+            </div>
+        
+            <div class="slide-container"> 
+                <div class="slide">
+                    <i class="fa-solid fa-quote-right icon"></i>
+                    <div class="user">
+                        <img  src="./img/pexels-olly-3831612.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Brian Zooksky</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text">  " Would you like me to give you a formula for sucess? its's quite simple, really: Double your rate of
+                        failure. You are thinking of failure as the enemey of success. But it isn't at all. You can be
+                        discouraged by failure or you can learn from it, so go aheadand make mistakes. Make all you 
+                        can. Because remember that's where you will find success "  </p>
+                </div>
+            </div>
+        
+            
+            <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+            <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        
+        
+           </div> 
+    </div>
+</section>  
+
+
+<div class="image">
+    <img class="image-placing" src="./img/pexels-vlada-karpovich-7433894.jpg" alt="">
+</div>
+
+<section id="section-experience">
+    <div class="experience-container">
+        <h5>37</h5>
+        <p>Years Of</p>
+      <p>Experience</p>
+      </div>
+
+      <div class="image2">
+        <img class="image-placing2" src="./img/pexels-vlada-karpovich-7433894.jpg" alt="">
+    </div>
+</section>
+
+<div class="dark-box">
+    <div class="note-pad">
+        <p>In finance, the benefit from an investment is called a return.The</p>
+        <p>return may consist of a gain (or loss) realized from the sale of a</p>
+        <p>property or an investment, unrealized capital appreciaton, or</p>
+        <p>investment income.</p>
+
+        <a href="#" class="btn-dark"> <i class="fa-solid fa-arrow-right"></i>Read more</a>
+
+    </div>
+</div>
+
+<div class="footer-box">
+    <div class="footer-boxheader">
+        <h6>Looking for an advisor?</h6>
+        <p>Make an appointment</p>
+    </div>
+
+    <div class="footer-boxlinks">
+        <a href="#" class="btn-request">Request</a>
+        <p><i class="fa-solid fa-phone"></i> +1 (800) 333 445</p>
+    </div>
+
+</div>
+
+<section class="footer-container">
+
+    <div id="first-div">
+        <header class="header">
+            <div class="header-content">
+               <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+               <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                <p class="header-text2">investment solutions</p> </div> 
+            </div>
+        </header>
+
+        <div class="text-footer">
+            <p>Crusaders is redefining the marketplace for business purchases by making it</p>
+            <p>dramatically easier for buyers to discover, learn more about,compare and buy</p>
+            <p>the products and services they need to run and grow their business</p>
+        </div>
+
+        <div class="social-links">
+            <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://linkedin.com" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+    </div> 
+
+
+    <div  id="second-div">
+                <div class="row">
+                    <div class="footer-col">
+                    <h2>ABOUT COMPANY</h2>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Resource Center</a></li>
+                        <li><a href="#">Business Tools</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Resource Libiary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2> QUICK ACCESS </h2>
+                    <ul>
+                        <li><a href="#">Users Account</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Investment Guide</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Lawyers firm</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                </div>
+    </div>
+</section>
+
+<footer>
+ <div class="horizontal-linebox">
+    <div class="horizontal-line"></div> 
+ </div>
+  
+
+    <div class="all-rights">
+        <p>&copy; copyright 2025. All rights reserved </p>
+    </div> 
+    
+</footer>
+
+
+ 
+<script>
+    let slides =document.querySelectorAll('.slide-container');
+    let index = 0;
+
+    function next(){
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+
+    }
+    function prev(){
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+
+    }
+</script>     
+    
+</body>
+</html>

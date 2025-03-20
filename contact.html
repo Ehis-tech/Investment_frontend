@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0afba3624a.js" crossorigin="anonymous"></script>
+    <title>Investment website</title>
+    <link rel="stylesheet" href="style.css" /> 
+    </head>
+    <style>
+
+@media screen and (max-width:540px) {
+            .header {
+    display: none;
+}
+
+.nav-2 {
+    display: none;
+}
+
+.headerX {
+    position: relative;
+    width:500px;
+    display: flex;
+    column-gap: 180px;
+    margin-left: -40px;
+    background: #E0E0E0;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.hamburger,
+    .toogle-menu {
+        display: block;
+    }
+
+    .header-content2 {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #404040;
+        width: 300px;
+        height: 700px; 
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+    
+  
+
+    .menu li a {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+
+.header-text2 {
+    line-height: 0.9rem;
+}
+
+.about-header {
+    display: none;
+}
+
+.about-header2 {
+    display: block;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #E0E0E0;
+    color: #404040;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#contact-field .contact-container {
+     display: grid;
+ }
+
+ .contact-container .contact-box {
+   display: grid;
+   align-items: center;
+ }
+
+ .contact-box .icon-box {
+  margin-left: 100px;
+ } 
+
+ .contact-box .cont-note {
+    text-align: center;
+ }
+
+#form-map {
+    margin-top: 365px;
+    height: 900px;
+}
+
+#form-map .form-map-container {
+    display: grid;
+}
+
+/*.form-wrap .form-group {
+    margin-top: 15px;
+    line-height: 1.3em;
+    display: grid;
+    align-items: center;
+ } */
+
+.form-map-container .form-wrap {
+    width: 400px;
+}
+
+.footer-box { 
+    display: grid;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0.2px;
+    justify-self: center;  
+}
+
+.footer-boxheader {
+    display: block;
+    padding: 10px ;
+    text-align: center;
+}
+
+.footer-boxheader h6 {
+    font-size: 30px;
+}
+
+.footer-boxheader p {
+    font-size: 20px;
+   
+}
+
+.footer-box .footer-boxlinks {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.footer-boxlinks  .btn-request {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer-container {
+    display: grid;
+    height: 1190px;    
+}
+
+#first-div header {
+    display: grid;
+    justify-self: center;
+}
+
+#first-div {
+    margin-top: 50px ;
+}
+
+#first-div .social-links {
+    justify-self: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+.social-links a {
+    padding: 5px 10px;
+}
+
+
+#second-div .row {
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: center;
+   
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+}
+.row .footer-col h2 {
+    font-size: 30px;
+}
+
+.horizontal-linebox {
+    margin-top: 0.1px;
+}
+
+.horizontal-line {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.all-rights p {
+    padding: 40px;
+    font-size: 13px;
+}
+
+}
+
+@media screen and (width = 768px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+
+}
+
+ #contact-field .contact-container {
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+
+#form-map .form-map-container {
+    display: flex;
+    justify-self: center;
+    column-gap: 50px;
+    width: 700px;
+}
+
+.form-wrap .form-group input {
+    height:50px ;
+    width: 150px;
+    padding: 10px 10px;
+    background: #404040;
+    color: #E0E0E0;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+ }
+ 
+ .form-wrap .form-group textarea {
+    height: 100px;
+    width: 180%;
+ }
+
+ .map-box .map {
+    width: 300px;
+ }
+
+
+ .footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 820px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+
+}
+
+ #contact-field .contact-container {
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+
+#form-map .form-map-container {
+    display: flex;
+    justify-self: center;
+    column-gap: 50px;
+    width: 700px;
+}
+
+.form-wrap .form-group input {
+    height:50px ;
+    width: 150px;
+    padding: 10px 10px;
+    background: #404040;
+    color: #E0E0E0;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+ }
+ 
+ .form-wrap .form-group textarea {
+    height: 100px;
+    width: 180%;
+ }
+
+ .map-box .map {
+    width: 300px;
+ }
+
+ .footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 912px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+
+}
+
+ #contact-field .contact-container {
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+
+#form-map .form-map-container {
+    display: flex;
+    justify-self: center;
+    column-gap: 50px;
+    width: 900px;
+
+}
+
+.form-wrap .form-group {
+    grid-gap: 1rem;
+    padding: 0 10px;
+ }
+
+ .form-wrap button {
+    margin-left: 10px;
+ }
+
+.form-wrap .form-group input {
+    height:50px ;
+    width: 200px;
+    padding: 10px 10px;
+    background: #404040;
+    color: #E0E0E0;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+ }
+ 
+ .form-wrap .form-group textarea {
+    height: 100px;
+    width: 180%;
+ }
+
+ .map-box .map {
+    width: 390px;
+ }
+
+ .footer-box {
+column-gap: 0.1px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 95px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 853px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+
+}
+
+ #contact-field .contact-container {
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+
+#form-map .form-map-container {
+    display: flex;
+    justify-self: center;
+    column-gap: 50px;
+    width: 700px;
+}
+
+.form-wrap .form-group input {
+    height:50px ;
+    width: 150px;
+    padding: 10px 10px;
+    background: #404040;
+    color: #E0E0E0;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+ }
+ 
+ .form-wrap .form-group textarea {
+    height: 100px;
+    width: 180%;
+ }
+
+ .map-box .map {
+    width: 300px;
+ }
+
+
+ .footer-box {
+column-gap: 60px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 65px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 1024px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 390px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+    .footer-box {
+column-gap: 180px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 900px;
+margin-left: 55px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+
+
+}
+    </style>
+    <body>
+
+        <body>
+            <header class="header">
+                <div class="header-content">
+                   <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                   <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                    <p class="header-text2">investment solutions</p> </div> 
+                </div>
+            </header>  
+        
+            
+            <nav class="nav-2">
+                <div class="nav-content">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-box">
+                        <p><i class="fa-solid fa-phone"></i> Free Consultation</p>
+                    </div>
+                </div>  
+            </nav> 
+        
+            <header class="headerX">
+               
+                   
+                        <div class="header-content2"> 
+                           <div><a href="#" class="logo2"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                           <div><p class="header-text2">EHIS<span class="text-primary2">INVEST</span></p>
+                            <p class="header-text3">investment solutions</p> </div> 
+                        </div>
+            
+                   
+                    <div class="navigation">
+        
+                       <input type="checkbox" class="toggle-menu">
+                      <div class="ham-container"> 
+                           <div class="hamburger"></div>
+                      </div> 
+                            <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>   
+                    </div>   
+            </header>
+        
+            <div class="about-header">
+                    <p> Contact</p>
+                </div>    
+            </div>
+
+            <div class="about-header2">
+                <p> Contact</p>
+            </div> 
+        </div>
+
+            <section id="contact-field">
+             <div class="contact-container">
+
+               <div class="contact-box">
+
+                <div class="icon-box">
+                     <i class="fa-solid fa-envelope fa-2x"></i>
+                </div>
+               
+                <div class="cont-note">
+                    <h6>Email</h6>
+                    <p>ehiswebsite@gmail.com</p>
+                </div>
+               </div>
+               <div class="contact-box">
+
+                <div class="icon-box">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+               
+                <div class="cont-note">
+                    <h6>Phone</h6>
+                    <p>+1 (800) 331-4567</p>
+                </div>
+               </div>
+               <div class="contact-box">
+
+                <div class="icon-box">
+                    <i class="fa-solid fa-message fa-2x"></i>
+                </div>
+               
+                <div class="cont-note">
+                    <h6>Free Call</h6>
+                    <p>+1 (800) 331-4567</p>
+                </div>
+               </div>
+               <div class="contact-box">
+
+                <div class="icon-box">
+                    <i class="fa-solid fa-location-dot fa-2x"></i>
+                </div>
+               
+                <div class="cont-note">
+                    <h6>Address</h6>
+                    <p>No 12, kingston highway,off baltimore</p>
+                </div>
+               </div>
+
+
+             </div>
+            </section>
+
+            <section id="form-map">
+                <div class="form-map-container">
+
+                <div class="form-wrap">
+                    <h1> Send your messages via below form</h1>
+                 <form>
+                    <div class="form-group">
+                       <input type="text" placeholder="Your name" id="full-name"/>
+                       <input type="email" placeholder="Your Email" id="emial"/>
+                       <input type="number" placeholder="Phone" id="phone-number"/>
+                       <input type="text" placeholder="Business type" id="business"/>
+                       <textarea type="text" placeholder="Your Question" id="Question"></textarea>
+                    </div>
+                    <button type="submit" class="btn-form"> Submit</button>
+                  
+                    </form>
+                 </div>
+
+
+                  <div class="map-box">
+                      
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507224.5782836087!2d3.049746476363686!3d6.685020408274696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2c24da2745%3A0x1222d8219b0e21b!2sCrusaderSterling%20Pensions%20Limited!5e0!3m2!1sen!2sng!4v1741472401559!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                  </div>
+
+                </div>
+            </section>
+
+            <div class="footer-box">
+                <div class="footer-boxheader">
+                    <h6>Looking for an advisor?</h6>
+                    <p>Make an appointment</p>
+                </div>
+            
+                <div class="footer-boxlinks">
+                    <a href="#" class="btn-request">Request</a>
+                    <p><i class="fa-solid fa-phone"></i> +1 (800) 333 445</p>
+                </div>
+            
+            </div>
+            
+            <section class="footer-container">
+            
+                <div id="first-div">
+                    <header class="header">
+                        <div class="header-content">
+                           <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                           <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                            <p class="header-text2">investment solutions</p> </div> 
+                        </div>
+                    </header>
+            
+                    <div class="text-footer">
+                        <p>Crusaders is redefining the marketplace for business purchases by making it</p>
+                        <p>dramatically easier for buyers to discover, learn more about,compare and buy</p>
+                        <p>the products and services they need to run and grow their business</p>
+                    </div>
+            
+                    <div class="social-links">
+                        <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://linkedin.com" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                      </div>
+            
+                </div> 
+            
+            
+                <div  id="second-div">
+                            <div class="row">
+                                <div class="footer-col">
+                                <h2>ABOUT COMPANY</h2>
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Resource Center</a></li>
+                                    <li><a href="#">Business Tools</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Resource Libiary</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h2> QUICK ACCESS </h2>
+                                <ul>
+                                    <li><a href="#">Users Account</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Investment Guide</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Lawyers firm</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                </div>
+            </section>
+            
+            <footer>
+             <div class="horizontal-linebox">
+                <div class="horizontal-line"></div> 
+             </div>
+              
+            
+                <div class="all-rights">
+                    <p>&copy; copyright 2025. All rights reserved </p>
+                </div> 
+                
+            </footer>
+    
+
+
+
+    </body>
+</html>

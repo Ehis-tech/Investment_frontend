@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0afba3624a.js" crossorigin="anonymous"></script>
+    <title>Investment website</title>
+    <link rel="stylesheet" href="style.css" /> 
+    </head>
+    <style>
+  @media screen and (max-width:540px) {
+            .header {
+    display: none;
+}
+
+.nav-2 {
+    display: none;
+}
+
+.headerX {
+    position: relative;
+    width:500px;
+    display: flex;
+    column-gap: 180px;
+    margin-left: -40px;
+    background: #E0E0E0;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.hamburger,
+    .toogle-menu {
+        display: block;
+    }
+
+    .header-content2 {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #404040;
+        width: 300px;
+        height: 700px; 
+        padding-top: 65px;
+      /*  z-index: 10; */
+    }
+
+    .menu li {
+        width: 100%;
+    }
+    
+  
+
+    .menu li a {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+
+.header-text2 {
+    line-height: 0.9rem;
+}
+
+.about-header {
+    display: none;
+}
+
+.about-header2 {
+    display: block;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #E0E0E0;
+    color: #404040;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#services-note {
+    width: 414px;
+    margin-top: 60px;
+}
+
+.services-p .bold-note {
+    font-size: 20px;
+    padding: 3px 10px;
+  
+}
+
+.services-p .unbold-note {
+    font-size: 15px;
+}
+
+.column-rowz {
+    display: grid;
+    justify-content:center;
+    margin-bottom:-350px;
+    position: relative;
+    z-index: 1;
+    background-color: #E0E0E0;
+}
+
+.column0, .column2, .column3, .column4 {
+    width: 300px;
+    height: 350px;
+    margin-top: 20px;   
+}
+
+.info-container {
+    display: grid;
+}
+
+.info-container .info-headerbox {
+    text-align: center;
+    line-height: 1.7rem;
+    margin-top: 250px;
+}
+
+.info-container .info-text {
+    margin-top: 10px;
+}
+
+#varietyz {
+    display: grid;
+    height: 650px;
+    margin-top: -80px;
+   
+}
+
+.variety-containerz {
+    height:670px;
+    width: 414px;
+    padding: 30px;  
+}
+
+.variety-containerz .variety-gridz {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.variety-gridz .grid {
+    display: grid;
+}
+
+.variety-gridz .note-grid h2 {
+    line-height: 1em;
+}
+
+.variety-gridz .note-grid p {
+    line-height: 1em;
+}
+
+#how {
+    background: #fff;
+    margin-top: 90px;
+}
+.how-section .how-1 {
+    margin-left:100px ; 
+    margin-right:100px ; 
+}
+
+.tilt-box {
+   display: grid;
+}
+
+.tilt-box .tilt-container {
+    display: grid;
+    grid-gap:1rem;
+    height: 450px;
+    width: 414px;
+}
+
+.tilt-container .num-box {
+    margin-left: 180px;
+}
+
+
+.tilt-container .num-box-sq {
+    height: 200px;
+    width: 400px;
+    justify-self: center;
+    margin-top: 2px;
+} 
+
+.horizontal-lineboxz {
+    display: none;
+}
+
+#question {
+    margin-top: 40px;
+}
+
+.question-header .ques-no {
+     margin-left: 60px;
+     margin-right: 60px;
+ }
+
+ #question .ques-middle {
+   margin-top: 30px;
+   display: grid;
+ }
+
+ .ques-middle .img-ques {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+    justify-self: center;
+ }
+
+ .ques-middle .img-note {
+    height: 300px;
+ }
+ .img-note .img-note-container {
+    margin-left: 1px;
+    padding: 10px;
+ }
+
+ #question .ques-last {
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ .footer-box { 
+    display: grid;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 0.2px;
+    justify-self: center;  
+}
+
+.footer-boxheader {
+    display: block;
+    padding: 10px ;
+    text-align: center;
+}
+
+.footer-boxheader h6 {
+    font-size: 30px;
+}
+
+.footer-boxheader p {
+    font-size: 20px;
+   
+}
+
+.footer-box .footer-boxlinks {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.footer-boxlinks  .btn-request {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer-container {
+    display: grid;
+    height: 1190px;    
+}
+
+#first-div header {
+    display: grid;
+    justify-self: center;
+}
+
+#first-div {
+    margin-top: 50px ;
+}
+
+#first-div .social-links {
+    justify-self: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+.social-links a {
+    padding: 5px 10px;
+}
+
+
+#second-div .row {
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: center;
+   
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+}
+.row .footer-col h2 {
+    font-size: 30px;
+}
+
+.horizontal-linebox {
+    margin-top: 0.1px;
+}
+
+.horizontal-line {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.all-rights p {
+    padding: 40px;
+    font-size: 13px;
+}
+
+}
+
+@media screen and (width = 768px) {
+    
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+    #services-note {
+    width: 760px;
+    margin-top: 60px;
+    justify-self: center;
+}
+
+#varietyz {
+    column-gap: 10px;
+    margin-top: -200px;
+}
+
+.variety-containerz {
+    width: 760px;  
+    height: 400px;
+}
+
+.variety-containerz .variety-gridz {
+    grid-gap: 0.5rem;
+}
+
+.variety-gridz .icon i {
+    padding: 30px 0;
+}
+
+.variety-gridz .note-grid {
+    padding: 30px 0px; 
+}
+
+.variety-gridz .note-grid h2 {
+    line-height: 1em;
+}
+
+.variety-gridz .note-grid p {
+    line-height: 0.8em;
+}
+
+#how {
+    margin-top: 100px;
+}
+
+.how-section .how-1 {
+    margin-left:295px ; 
+    margin-right:295px ; 
+}
+
+.tilt-box {
+   column-gap: 5px;
+   padding-left: 50px;
+   padding-right: 10px;
+}
+
+.tilt-container .num-box {
+    margin-left: 50px;
+}
+
+.tilt-box .tilt-container {
+    width: 180px;
+}
+
+.tilt-container .num-box-sq {
+    height: 370px;
+    width: 150px;
+} 
+
+.num-box-sq h6 {
+    margin-top: 5px;
+}
+
+.horizontal-linez {
+    width: 600px;
+    height: 1px;
+    background: #404040;
+    margin-left: 90px;
+    margin-right:150px;  
+}
+
+#question {
+    height: 700px;
+}
+
+
+.question-header .ques-no {
+     margin-left: 260px;
+     margin-right: 260px;
+ }
+
+ .ques-middle .img-ques {
+    height: 300px;
+    width: 300px;
+ }
+
+ .footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 820px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+    #services-note {
+    width: 760px;
+    margin-top: 60px;
+    justify-self: center;
+}
+
+#varietyz {
+    column-gap: 10px;
+    margin-top: -200px;
+}
+
+.variety-containerz {
+    width: 760px;  
+    height: 400px;
+}
+
+.variety-containerz .variety-gridz {
+    grid-gap: 0.5rem;
+}
+
+.variety-gridz .icon i {
+    padding: 30px 0;
+}
+
+.variety-gridz .note-grid {
+    padding: 30px 0px; 
+}
+
+.variety-gridz .note-grid h2 {
+    line-height: 1em;
+}
+
+.variety-gridz .note-grid p {
+    line-height: 0.8em;
+}
+
+#how {
+    margin-top: 100px;
+}
+
+.how-section .how-1 {
+    margin-left:295px ; 
+    margin-right:295px ; 
+}
+
+.tilt-box {
+   column-gap: 5px;
+   padding-left: 50px;
+   padding-right: 10px;
+}
+
+.tilt-container .num-box {
+    margin-left: 50px;
+}
+
+.tilt-box .tilt-container {
+    width: 180px;
+}
+
+.tilt-container .num-box-sq {
+    height: 370px;
+    width: 150px;
+} 
+
+.num-box-sq h6 {
+    margin-top: 5px;
+}
+
+.horizontal-linez {
+    width: 600px;
+    height: 1px;
+    background: #404040;
+    margin-left: 90px;
+    margin-right:150px;  
+}
+
+#question {
+    height: 700px;
+}
+
+
+.question-header .ques-no {
+     margin-left: 260px;
+     margin-right: 260px;
+ }
+
+ .ques-middle .img-ques {
+    height: 300px;
+    width: 300px;
+ }
+
+ .footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+}
+
+@media screen and (width = 912px) {
+ 
+    
+ .nav-content {
+ column-gap: 0.1px;
+}
+
+.nav-box {
+ margin-left: 200px;
+ padding: 10px 20px;
+}
+
+.nav-box p {
+ font-size: 15px; 
+}   
+
+.about-header {
+margin-top: -59px;
+}
+
+.nav-list {
+     margin-top: 10px;
+ }
+
+ #services-note {
+    width: 760px;
+    margin-top: 60px;
+    justify-self: center;
+}
+
+#varietyz {
+    column-gap: 10px;
+    margin-top: -200px;
+}
+
+.variety-containerz {
+    width: 760px;  
+    height: 400px;
+}
+
+.variety-containerz .variety-gridz {
+    grid-gap: 0.5rem;
+}
+
+.variety-gridz .icon i {
+    padding: 30px 0;
+}
+
+.variety-gridz .note-grid {
+    padding: 30px 0px; 
+}
+
+.variety-gridz .note-grid h2 {
+    line-height: 1em;
+}
+
+.variety-gridz .note-grid p {
+    line-height: 0.8em;
+}
+
+#how {
+    margin-top: 100px;
+}
+
+.how-section .how-1 {
+    margin-left:295px ; 
+    margin-right:295px ; 
+}
+
+.tilt-box {
+   column-gap: 5px;
+   padding-left: 50px;
+   padding-right: 10px;
+}
+
+.tilt-container .num-box {
+    margin-left: 50px;
+}
+
+.tilt-box .tilt-container {
+    width: 180px;
+}
+
+.tilt-container .num-box-sq {
+    height: 370px;
+    width: 150px;
+} 
+
+.num-box-sq h6 {
+    margin-top: 5px;
+}
+
+.horizontal-linez {
+    width: 600px;
+    height: 1px;
+    background: #404040;
+    margin-left: 90px;
+    margin-right:150px;  
+}
+
+#question {
+    height: 700px;
+}
+
+
+.question-header .ques-no {
+     margin-left: 260px;
+     margin-right: 260px;
+ }
+
+ .ques-middle .img-ques {
+    height: 300px;
+    width: 300px;
+ }
+
+ .footer-box {
+column-gap: 0.1px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 95px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 853px) {
+
+
+.nav-content {
+column-gap: 0.1px;
+}
+
+.nav-box {
+margin-left: 200px;
+padding: 10px 20px;
+}
+
+.nav-box p {
+font-size: 15px; 
+}   
+
+.about-header {
+margin-top: -59px;
+}
+
+.nav-list {
+    margin-top: 10px;
+}
+
+#services-note {
+    width: 760px;
+    margin-top: 60px;
+    justify-self: center;
+}
+
+#varietyz {
+    column-gap: 10px;
+    margin-top: -200px;
+}
+
+.variety-containerz {
+    width: 760px;  
+    height: 400px;
+}
+
+.variety-containerz .variety-gridz {
+    grid-gap: 0.5rem;
+}
+
+.variety-gridz .icon i {
+    padding: 30px 0;
+}
+
+.variety-gridz .note-grid {
+    padding: 30px 0px; 
+}
+
+.variety-gridz .note-grid h2 {
+    line-height: 1em;
+}
+
+.variety-gridz .note-grid p {
+    line-height: 0.8em;
+}
+
+#how {
+    margin-top: 100px;
+}
+
+.how-section .how-1 {
+    margin-left:295px ; 
+    margin-right:295px ; 
+}
+
+.tilt-box {
+   column-gap: 5px;
+   padding-left: 50px;
+   padding-right: 10px;
+}
+
+.tilt-container .num-box {
+    margin-left: 50px;
+}
+
+.tilt-box .tilt-container {
+    width: 180px;
+}
+
+.tilt-container .num-box-sq {
+    height: 370px;
+    width: 150px;
+} 
+
+.num-box-sq h6 {
+    margin-top: 5px;
+}
+
+.horizontal-linez {
+    width: 600px;
+    height: 1px;
+    background: #404040;
+    margin-left: 90px;
+    margin-right:150px;  
+}
+
+#question {
+    height: 700px;
+}
+
+
+.question-header .ques-no {
+     margin-left: 260px;
+     margin-right: 260px;
+ }
+
+ .ques-middle .img-ques {
+    height: 300px;
+    width: 300px;
+ }
+
+ .footer-box {
+column-gap: 60px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 700px;
+margin-left: 65px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+@media screen and (width = 1024px) {
+
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 390px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+    #services-note {
+    height: 200px;
+}
+
+.variety-containerz .variety-gridz {
+    grid-gap: 0.5rem;
+}
+
+#varietyz {
+    column-gap: 10px;
+    margin-top: -200px;
+}
+
+.variety-containerz {
+    width: 1022px; 
+} 
+
+.how-section .how-1 {
+    margin-left:395px; 
+    margin-right:395px; 
+}
+
+.tilt-box {
+   column-gap: 5px;
+   padding-left: 60px;
+   padding-right: 10px;
+}
+
+.tilt-container .num-box {
+    margin-left: 70px;
+}
+
+.tilt-box .tilt-container {
+    width: 250px;
+}
+
+.tilt-container .num-box-sq {
+    height: 370px;
+    width: 200px;
+} 
+
+.horizontal-linez {
+    width: 815px;
+    height: 1px;
+    background: #404040;
+    margin-left: 95px;
+    margin-right:255px;  
+}
+
+#question {
+    height: 650px;
+}
+
+.question-header .ques-no {
+     margin-left: 360px;
+     margin-right: 360px;
+ }
+
+ .footer-box {
+column-gap: 180px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 900px;
+margin-left: 55px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+
+
+
+    </style>
+    <body>
+        <header class="header">
+            <div class="header-content">
+               <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+               <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                <p class="header-text2">investment solutions</p> </div> 
+            </div>
+        </header>  
+    
+        
+        <nav class="nav-2">
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-box">
+                    <p><i class="fa-solid fa-phone"></i> Free Consultation</p>
+                </div>
+            </div>  
+        </nav> 
+    
+        <header class="headerX">
+           
+               
+                    <div class="header-content2"> 
+                       <div><a href="#" class="logo2"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                       <div><p class="header-text2">EHIS<span class="text-primary2">INVEST</span></p>
+                        <p class="header-text3">investment solutions</p> </div> 
+                    </div>
+        
+               
+                <div class="navigation">
+    
+                   <input type="checkbox" class="toggle-menu">
+                  <div class="ham-container"> 
+                       <div class="hamburger"></div>
+                  </div> 
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>   
+                </div>   
+        </header>
+    
+        <div class="about-header">
+                <p> Services</p>
+            </div>   
+        </div>
+
+        <div class="about-header2">
+            <p> Services</p>
+        </div> 
+    </div>
+
+        <section id="services-note">
+            <div class="services-p">
+                 <p class="bold-note">It's Personal, Every Person Who Walks, Through Our Door is important To Us,
+                    Experience, and Knowledge When You Need it Most.
+                 </p>
+
+                 <p class="unbold-note">To create a better everyday life for the many people</p>
+            </div>
+
+        </section>
+
+        <div class="column-rowz">
+          
+            <div class="column0">
+                <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                <h2 class="column-header0">Finance</h2>
+                <h2 class="column-header0">Consulting</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+
+            <div class="column2">
+                <i class="fa-solid fa-money-bill-trend-up fa-2x"></i>
+                <h2 class="column-header2">Investment</h2>
+                <h2 class="column-header2">Advices</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+
+            <div class="column3">
+                <i class="fa-solid fa-sack-dollar fa-2x"></i>
+                <h2 class="column-header3">Investment</h2>
+                <h2 class="column-header3">Insurance</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+
+            <div class="column4">
+                <i class="fa-solid fa-handshake fa-2x"></i>
+                <h2 class="column-header4">Wealth</h2>
+                <h2 class="column-header4">Management</h2>
+                <P>On any situations and anytime</P>
+
+                <a href="#" class="btn-column">Our solutions</a>
+            </div>
+        </div>
+
+        <section class="info-box">
+            <div class="info-container">
+                <div class="info-headerbox">
+                    <h4 class="info-header"> Do You</h4>
+                    <h4 class="info-header"> Have Any</h4>
+                    <h4 class="info-header"> Ideas?</h4>
+                </div>
+               
+
+                <div class="info-text">
+                    <p>investors generally expect higher returns from riskier investments. When a low risk investment is</p>
+                    <p>made, the return is also generally low. Similary high risk comes with high returns.</p>
+    
+                    <a href="#" class="btn-info"><i class="fa-solid fa-arrow-right"></i>See more</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="varietyz">
+
+            <div class="variety-containerz">
+
+       <div class="variety-gridz">
+
+          <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-graduation-cap fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>College savings</h2>
+                <P>insurable risk is predictable</P>
+            </div>      
+         </div>
+
+       <div class="grid">
+        <div class="icon">
+            <i class="fa-solid fa-vault fa-2x"></i>
+        </div>
+          
+        <div class="note-grid">
+            <h2>Wealth Management</h2>
+            <P>Better proper functioning</P>
+        </div>               
+         </div>
+
+         <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-money-bill-trend-up fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>Stocks Management</h2>
+                <P>Obtain highest profit</P>
+            </div>              
+         </div>
+
+     <div class="grid">
+        <div class="icon">
+            <i class="fa-solid fa-arrow-trend-up fa-2x"></i>
+        </div>
+          
+        <div class="note-grid">
+            <h2>Income insurance</h2>
+            <P>Buying and selling tools</P>
+        </div>
+                            
+        </div>
+
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-coins fa-2x"></i>
+            </div>
+              
+            <div class="note-grid">
+                <h2>Investment Advice</h2>
+                <P>Aim all economic activities</P>
+            </div>                   
+            </div>
+                                   
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-file-contract fa-2x"></i>
+                </div>
+                  
+                <div class="note-grid">
+                    <h2>Industrial contracts</h2>
+                    <P>New and inventive way</P>
+                </div>                   
+                </div>                                 
+                    
+      </div> 
+     </div>  
+ </div>  
+ </section>
+
+ <section id="how">
+     <div class="how-section">
+        <h5 class="how-1">HOW?</h5>
+        <h5 class="how-2">See How We Work!</h5>
+        <p>We have 37 years experience in investmenet & financial advising.</p>
+     </div>
+
+     <div class="tilt-box">
+
+        <div class="tilt-container">
+            <div class="num-box">
+                  <p>1</p> 
+            </div>
+
+            <div class="num-box-sq">
+                <h6>Free of Consultation</h6>
+               <p>investors generally expect higher returns from riskier investments. When a low risk investment is
+               made, the return is also generally low. Similary high risk comes with high returns.</p>
+            </div>
+        </div>
+        <div class="tilt-container">
+            <div class="num-box">
+                  <p>2</p> 
+            </div>
+
+            <div class="num-box-sq">
+                <h6>Sign a contract with you</h6>
+               <p>investors generally expect higher returns from riskier investments. When a low risk investment is
+               made, the return is also generally low. Similary high risk comes with high returns.</p>
+            </div>
+        </div>
+        <div class="tilt-container">
+            <div class="num-box">
+                  <p>3</p> 
+            </div>
+
+            <div class="num-box-sq">
+                <h6>Research & Planning</h6>
+               <p>investors generally expect higher returns from riskier investments. When a low risk investment is
+               made, the return is also generally low. Similary high risk comes with high returns.</p>
+            </div>
+        </div>
+        <div class="tilt-container">
+            <div class="num-box">
+                  <p>4</p> 
+            </div>
+
+            <div class="num-box-sq">
+                <h6>Deliver Investment</h6>
+               <p>investors generally expect higher returns from riskier investments. When a low risk investment is
+               made, the return is also generally low. Similary high risk comes with high returns.</p>
+            </div>
+        </div>
+
+
+     </div>
+
+
+     <div class="horizontal-lineboxz">
+        <div class="horizontal-linez"></div> 
+     </div>
+
+ </section>
+
+ <section id="question">
+    <div class="question-header">
+     <p class="ques-note">Have question? Feel free to ask us!</p>
+     <p class="ques-no">Call free +1 (800) 345-4567</p>
+    </div>
+
+    <div class="ques-middle">
+        <img class="img-ques" src="./img/pexels-yankrukov-7793932.jpg" alt="">
+
+        <div class="img-note">
+            <div class="img-note-container">
+                <h6 class="img-note-h">What we can do more</h6>
+                <h6 class="img-note-h">in different cases</h6>
+                <p>Our Advisers Vision</p>
+            </div>
+           
+        </div>
+
+    </div>
+
+    <div class="ques-last">
+        <div class="ques-note-last">
+       <p><span>Investors</span> generally expect higher returns from riskier investments.</p>
+       <p> When a low risk<span> investment</span> is made.</p>
+        </div>
+    </div>
+
+ </section>
+
+ <div class="footer-box">
+    <div class="footer-boxheader">
+        <h6>Looking for an advisor?</h6>
+        <p>Make an appointment</p>
+    </div>
+
+    <div class="footer-boxlinks">
+        <a href="#" class="btn-request">Request</a>
+        <p><i class="fa-solid fa-phone"></i> +1 (800) 333 445</p>
+    </div>
+
+</div>
+
+<section class="footer-container">
+
+    <div id="first-div">
+        <header class="header">
+            <div class="header-content">
+               <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+               <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                <p class="header-text2">investment solutions</p> </div> 
+            </div>
+        </header>
+
+        <div class="text-footer">
+            <p>Crusaders is redefining the marketplace for business purchases by making it</p>
+            <p>dramatically easier for buyers to discover, learn more about,compare and buy</p>
+            <p>the products and services they need to run and grow their business</p>
+        </div>
+
+        <div class="social-links">
+            <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://linkedin.com" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+    </div> 
+
+
+    <div  id="second-div">
+                <div class="row">
+                    <div class="footer-col">
+                    <h2>ABOUT COMPANY</h2>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Resource Center</a></li>
+                        <li><a href="#">Business Tools</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Resource Libiary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2> QUICK ACCESS </h2>
+                    <ul>
+                        <li><a href="#">Users Account</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Investment Guide</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Lawyers firm</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                </div>
+    </div>
+</section>
+
+<footer>
+ <div class="horizontal-linebox">
+    <div class="horizontal-line"></div> 
+ </div>
+  
+
+    <div class="all-rights">
+        <p>&copy; copyright 2025. All rights reserved </p>
+    </div> 
+    
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

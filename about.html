@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0afba3624a.js" crossorigin="anonymous"></script>
+    <title>Investment website</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+
+@media screen and (max-width:540px) {
+
+.header {
+    display: none;
+}
+
+.nav-2 {
+    display: none;
+}
+
+.headerX {
+    position: relative;
+    width:500px;
+    display: flex;
+    column-gap: 180px;
+    margin-left: -40px;
+    background: #E0E0E0;
+    padding: 0 25px;
+    transition: 0.3s;
+}
+
+.hamburger,
+    .toogle-menu {
+        display: block;
+    }
+
+    .header-content2 {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #404040;
+        width: 300px;
+        height: 700px; 
+        padding-top: 65px;
+        z-index: 2;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+    
+  
+
+    .menu li a {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 -0.2px 0px #E0E0E0 inset,
+    20px 0 0 rgba(255, 255, 255, 0.01) inset;
+    }
+
+
+.header-text2 {
+    line-height: 0.9rem;
+}
+
+.about-header {
+    display: none;
+}
+
+.about-header2 {
+    display: block;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #E0E0E0;
+    color: #404040;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#about-body {
+    display: grid;
+    text-align: center;
+}
+
+#img-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -80px;
+}
+
+.info-boxz {
+    text-align: center;
+}
+
+.info-container {
+    display: grid; 
+}
+
+#ceo-container {
+    display: grid;
+}
+
+.ceo-row {
+    display: grid;
+    margin-top: -50px;
+}
+
+.ceo2, .ceo3 {
+    margin-top: 10px;
+}
+
+#testimonial {
+        margin-top: 900px;
+    }
+
+    .testimonial-content h3 {
+    margin-top: 95px;
+    margin-left:60px; 
+    margin-right:60px; 
+}
+
+.testimonial-content .container .slide-container .slide {
+    width: 270px;
+    height: 400px;
+    padding: 10px;
+}
+
+.testimonial-content .container .slide-container .slide .icon {
+   display: none;
+}
+
+.testimonial-content .container .slide-container .slide .user .user-info h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: -10px;
+} 
+
+#years-box {
+    margin-top: 230px;
+   
+}
+
+#years-box .yearsbox-container {
+    display: grid;  
+}
+
+.yearsbox-container  .second-box {
+    grid-gap: 0.5rem;
+    background-color: #E0E0E0;
+    margin-top: -25px;
+    width: 500px;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 80px;
+    justify-self: center;
+    
+}
+
+.second-box .white-box {
+    height: 160px;
+    width: 160px;
+}
+
+.second-box .white-box h5 {
+    font-size: 30px;
+}
+
+.second-box .white-box p {
+    font-size: 15px;
+}  
+
+#company-logos {
+    margin-top:550px;
+}
+
+.footer-box { 
+    display: grid;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0.2px;
+    justify-self: center;
+   
+    
+}
+
+.footer-boxheader {
+    display: block;
+    padding: 10px ;
+    text-align: center;
+}
+
+.footer-boxheader h6 {
+    font-size: 30px;
+}
+
+.footer-boxheader p {
+    font-size: 20px;
+   
+}
+
+.footer-box .footer-boxlinks {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.footer-boxlinks  .btn-request {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer-container {
+    display: grid;
+    height: 1190px;    
+}
+
+#first-div header {
+    display: grid;
+    justify-self: center;
+}
+
+#first-div {
+    margin-top: 50px ;
+}
+
+#first-div .social-links {
+    justify-self: center;
+    display: flex;
+    column-gap: 30px;
+}
+
+.social-links a {
+    padding: 5px 10px;
+}
+
+
+#second-div .row {
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: center;
+   
+}
+
+.footer-col ul li a {
+    font-size: 20px;
+}
+.row .footer-col h2 {
+    font-size: 30px;
+}
+
+.horizontal-linebox {
+    margin-top: 0.1px;
+}
+
+.horizontal-line {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.all-rights p {
+    padding: 40px;
+    font-size: 13px;
+}
+
+}
+
+@media screen and (width = 768px) {
+   
+
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 10px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+
+    #about-body {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 100px;
+}
+
+.about-history h1 {
+  line-height: 1.5rem;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+   margin-top: 70px;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+#years-box .yearsbox-container {
+    column-gap: 20px;
+}
+
+.yearsbox-container .first-box {
+    margin-left: 40px;
+}
+
+.second-box .white-box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+
+}
+
+@media screen and (width = 820px) {
+
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+
+
+
+    #about-body {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 100px;
+}
+
+.about-history h1 {
+  line-height: 1.5rem;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+   margin-top: 70px;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+#years-box .yearsbox-container {
+    column-gap: 20px;
+}
+
+.yearsbox-container .first-box {
+    margin-left: 40px;
+}
+
+.second-box .white-box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 35px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 912px) {
+ 
+    
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+
+    #about-body {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 100px;
+}
+
+.about-history h1 {
+  line-height: 1.5rem;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+   margin-top: 70px;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+#years-box .yearsbox-container {
+    column-gap: 20px;
+}
+
+.yearsbox-container .first-box {
+    margin-left: 40px;
+}
+
+.second-box .white-box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 95px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+
+}
+
+@media screen and (width = 853px) {
+
+
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+
+
+    #about-body {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 100px;
+}
+
+.about-history h1 {
+  line-height: 1.5rem;
+}
+
+.ceo1 {
+    width: 255px;
+    height: 550px;
+}
+.ceo2 {
+    width: 255px;
+    height: 550px;
+}
+.ceo3 {
+    width: 255px;
+    height: 550px;
+}
+
+.ceo-row h5 {
+    font-size: 25px;
+}
+
+#ceo-container {
+   display: flex;
+   height: 400px;
+   justify-content: center;
+   margin-top: 70px;
+}
+
+#testimonial {
+   margin-top: 40px;
+}
+
+.testimonial-content h4 {
+    margin-left:280px ; 
+    margin-right:280px ;  
+} 
+
+#years-box .yearsbox-container {
+    column-gap: 20px;
+}
+
+.yearsbox-container .first-box {
+    margin-left: 40px;
+}
+
+.second-box .white-box {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footer-box {
+    column-gap: 0.1px;
+}
+
+.footer-boxheader {
+    padding: 30px 1px;
+}
+
+.footer-container {
+    column-gap: 50px; 
+}
+
+.horizontal-line {
+    width: 700px;
+    margin-left: 65px;
+}
+.horizontal-linebox {
+    margin-top: none;
+}
+}
+
+@media screen and (width = 1024px) {
+    .nav-content {
+    column-gap: 0.1px;
+}
+
+.nav-box {
+    margin-left: 390px;
+    padding: 10px 20px;
+}
+
+.nav-box p {
+    font-size: 15px; 
+}   
+
+.about-header {
+   margin-top: -59px;
+}
+
+.nav-list {
+        margin-top: 10px;
+    }
+
+    
+    #about-body {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 100px;
+}
+
+.about-history h1 {
+  line-height: 1.5rem;
+}
+
+.testimonial-content h4 {
+    margin-left:380px ; 
+    margin-right:380px ;  
+} 
+
+#years-box .yearsbox-container {
+    column-gap: 180px;
+}
+
+.yearsbox-container .first-box {
+    margin-left: 40px;
+}
+
+.second-box .white-box {
+    height: 200px;
+    width: 220px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.yearsbox-container .first-box p {
+    line-height: 1.8rem;
+}
+
+.footer-box {
+column-gap: 180px;
+}
+
+.footer-boxheader {
+padding: 30px 1px;
+}
+
+.footer-container {
+column-gap: 50px; 
+}
+
+.horizontal-line {
+width: 900px;
+margin-left: 55px;
+}
+.horizontal-linebox {
+margin-top: none;
+}
+
+}
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+           <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+           <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+            <p class="header-text2">investment solutions</p> </div> 
+        </div>
+    </header>  
+
+    
+    <nav class="nav-2">
+        <div class="nav-content">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-box">
+                <p><i class="fa-solid fa-phone"></i> Free Consultation</p>
+            </div>
+        </div>  
+    </nav> 
+
+    <header class="headerX">
+       
+           
+                <div class="header-content2"> 
+                   <div><a href="#" class="logo2"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                   <div><p class="header-text2">EHIS<span class="text-primary2">INVEST</span></p>
+                    <p class="header-text3">investment solutions</p> </div> 
+                </div>
+    
+           
+            <div class="navigation">
+
+               <input type="checkbox" class="toggle-menu">
+              <div class="ham-container"> 
+                   <div class="hamburger"></div>
+              </div> 
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>   
+            </div>   
+    </header>
+
+    <div class="about-header">
+            <p> About</p>
+        </div> 
+    </div>
+
+    <div class="about-header2">
+        <p> About</p>
+    </div> 
+</div>
+
+    <section id="about-body">
+
+        <div class="about-history">
+            <h1> Our History</h1>
+            <p>Our Mission and Vision</p>
+        </div>
+
+        <div class="about-notepad">
+            <div class="about-note">
+                <p>In finance, the benefit from an investmenet is called return, The return may consist of gain (or loss)</p>
+                <p>realized from the sale of a property or an investment, unrealized capital appreciaton (or depretiation)</p>
+                <p>or investment income such as dividends, intrest,rental income etc, or a combination of capital gain</p>
+                <p> and income. The return may also include currency gains or losses due to changes in the foreign</p>
+                <p>currency exchange rates investors generally expect higher returns from riskier investments. When a low </p>
+                <p>risk investment is made,the return is also genrally low. Similary, high risk comes with high returns</p>
+            </div>    
+    </section>
+
+    <section id="img-section">
+        <img class="img-split" src="./img/pexels-yankrukov-7691739.jpg" alt="">
+        <img class="img-split" src="./img/pexels-yankrukov-7691691.jpg" alt="">
+        <img class="img-split" src="./img/pexels-karolina-grabowska-7875996.jpg" alt="">
+        <img class="img-split" src="./img/pexels-shkrabaanthony-5816293.jpg" alt="">
+       
+    </section>
+
+   <section class="info-boxz">
+        <div class="info-container">
+
+            <div class="info-headerboxz">
+                <h4 class="info-header"> Our expert</h4>
+                <h5 class="info-header"> Team members</h4>
+            </div>   
+    
+        </div>   
+    </section>
+    
+ <section id="ceo-container">
+                      
+        <div class="ceo-row">
+             <div class="ceo1">
+                 <h5>Brad Traversy</h5>
+                 <P>co-founder</P>
+             </div>
+ 
+             <div class="ceo2">
+                 <h5>Sarah Williams</h5>
+                 <P>Manager & Analyzer</P> 
+             </div>
+ 
+             <div class="ceo3">
+                 <h5>John Mcgrath</h5>
+                 <P>Risk Manager</P> 
+             </div> 
+         </div> 
+           </section>  
+
+ 
+      <section id="testimonial">
+            <div class="testimonial-content">
+                <h4>TESTIMONIALS</h4>
+                <p class="testimonial-note1">What Our Customers Say?</p>
+                <p class="testimonial-note2">We have over 15,000 happy customers all over the world</p>
+
+                <div class="container">
+
+                    <div class="slide-container active">
+                        <div class="slide">
+                            <i class="fa-solid fa-quote-right icon"></i>
+                            <div class="user">
+                                <img  src="./img/pexels-linkedin-2182970.jpg" alt="">
+                                <div class="user-info">
+                                    <h3>John Deo</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="text">  " Would you like me to give you a formula for sucess? its's quite simple, really: Double your rate of
+                                failure. You are thinking of failure as the enemey of success. But it isn't at all. You can be
+                                discouraged by failure or you can learn from it, so go aheadand make mistakes. Make all you 
+                                can. Because remember that's where you will find success "  </p>
+                        </div>
+                    </div>
+                
+                    <div class="slide-container">
+                        <div class="slide">
+                            <i class="fa-solid fa-quote-right icon"></i>
+                            <div class="user">
+                                <img  src="./img/pexels-cottonbro-5491144.jpg" alt="">
+                                <div class="user-info">
+                                    <h3>Amanda Johanson</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="text">  " Investors generally expect higher returns from riskier investmensts. When a low risk
+                                investment is made, the return is also generally low. Similary, high risk comes with high returns.
+                                investors,are particularly novices, are often advised to adopt a particular investment strategy and
+                                diversify their portfolio"  </p>
+                        </div>
+                    </div>
+                
+                    <div class="slide-container"> 
+                        <div class="slide">
+                            <i class="fa-solid fa-quote-right icon"></i>
+                            <div class="user">
+                                <img  src="./img/pexels-mika-mark-51669800-15019490.jpg" alt="">
+                                <div class="user-info">
+                                    <h3>Brian Zooksky</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="text">  " Would you like me to give you a formula for sucess? its's quite simple, really: Double your rate of
+                                failure. You are thinking of failure as the enemey of success. But it isn't at all. You can be
+                                discouraged by failure or you can learn from it, so go aheadand make mistakes. Make all you 
+                                can. Because remember that's where you will find success "  </p>
+                        </div>
+                    </div>
+                
+                    
+                    <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+                    <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+                
+                
+                   </div> 
+        
+            </div>
+        </section>  
+
+
+
+        <section id="years-box">
+            <div class="yearsbox-container">
+                
+                <div class="first-box">
+                    <h4>37</h4>
+                    <p>YEARS OF</p>
+                    <P>EXPERIENCE</P>
+                </div>
+    
+                <div class="second-box">
+                    <div class="white-box">
+                        <h5>15<span>+</span></h5>
+                        <p>Top Branches</p>
+                    </div>
+                    <div class="white-box">
+                        <h5>24<span>+</span></h5>
+                        <p>Expert Advisors</p>
+                    </div>
+                    <div class="white-box">
+                        <h5>65<span>B</span></h5>
+                        <p>Dollar Money Profit</p>
+                    </div>
+                    <div class="white-box">
+                        <h5>98<span>K</span></h5>
+                        <p>Success Investments</p>
+                    </div>
+                </div>  
+            </div>
+
+        </section>
+
+     <!---   <section id="company-logos">
+            <div class="logo-container">
+                <img src="./img/clinton.png" alt="">
+                <img src="./img/nicholas.png" alt="">
+                <img src="./img/nelson.png" alt="">
+                <img src="./img/belinda.png" alt="">
+                <img src="./img/company.png" alt="">
+
+            </div>
+        </section> -->
+
+        <section  id="company-logos">
+             <div class="swiper logo-slider">
+                <div class="swiper-wrapper">
+             <div class="swiper-slide slide"><img src="./img/clinton.png" alt=""></div> 
+             <div class="swiper-slide slide"><img src="./img/nicholas.png" alt=""></div> 
+             <div class="swiper-slide slide"><img src="./img/nelson.png" alt=""></div> 
+             <div class="swiper-slide slide"><img src="./img/belinda.png" alt=""></div> 
+             <div class="swiper-slide slide"><img src="./img/company.png" alt=""></div> 
+              
+
+                </div>
+             </div>
+        </section>
+        
+        <div class="footer-box">
+            <div class="footer-boxheader">
+                <h6>Looking for an advisor?</h6>
+                <p>Make an appointment</p>
+            </div>
+        
+            <div class="footer-boxlinks">
+                <a href="#" class="btn-request">Request</a>
+                <p><i class="fa-solid fa-phone"></i> +1 (800) 333 445</p>
+            </div>
+        
+        </div>
+        
+        <section class="footer-container">
+        
+            <div id="first-div">
+                <header class="header">
+                    <div class="header-content">
+                       <div><a href="#" class="logo"><i class="fa-solid fa-piggy-bank fa-2x"></i></a> </div> 
+                       <div><p class="header-text">EHIS<span class="text-primary">INVEST</span></p>
+                        <p class="header-text2">investment solutions</p> </div> 
+                    </div>
+                </header>
+        
+                <div class="text-footer">
+                    <p>Crusaders is redefining the marketplace for business purchases by making it</p>
+                    <p>dramatically easier for buyers to discover, learn more about,compare and buy</p>
+                    <p>the products and services they need to run and grow their business</p>
+                </div>
+        
+                <div class="social-links">
+                    <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="http://linkedin.com" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+        
+            </div> 
+        
+        
+            <div  id="second-div">
+                        <div class="row">
+                            <div class="footer-col">
+                            <h2>ABOUT COMPANY</h2>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Resource Center</a></li>
+                                <li><a href="#">Business Tools</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Resource Libiary</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h2> QUICK ACCESS </h2>
+                            <ul>
+                                <li><a href="#">Users Account</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Investment Guide</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Lawyers firm</a></li>
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
+                        </div>
+                        </div>
+            </div>
+        </section>
+        
+        <footer>
+         <div class="horizontal-linebox">
+            <div class="horizontal-line"></div> 
+         </div>
+          
+        
+            <div class="all-rights">
+                <p>&copy; copyright 2025. All rights reserved </p>
+            </div> 
+            
+        </footer>
+        
+
+     <!---   <script>
+            let slides =document.querySelectorAll('.slide-container');
+            let index = 0;
+        
+            function next(){
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+        
+            }
+            function prev(){
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+        
+            }
+        </script>      -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    
+</body>
+</html>
