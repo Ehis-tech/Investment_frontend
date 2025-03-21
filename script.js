@@ -17,3 +17,20 @@ var swiper = new Swiper(".logo-slider", {
         },
     },
   });
+
+  var swiper = new Swiper(".reviews-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 20,
+    breakpoints: {
+        540: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 4,
+        },
+    },
+  });
